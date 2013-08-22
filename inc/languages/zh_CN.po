@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:33+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:52+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Chinese, China\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "分类存档: %s"
 
 #: ../../archive.php
 msgid "Tag Archives: %s"
-msgstr "标记档案： %s"
+msgstr "标签归档： %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
@@ -61,7 +61,7 @@ msgstr "评论导航"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "较旧的评论"
+msgstr "较早的评论"
 
 #: ../../comments.php
 msgid "Newer Comments"
@@ -69,7 +69,7 @@ msgstr "较新的评论"
 
 #: ../../comments.php
 msgid "Comments are closed."
-msgstr "评论已关闭。"
+msgstr "评论被关闭。"
 
 #: ../../content.php
 msgid "Permalink to %s"
@@ -85,7 +85,7 @@ msgstr "页"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
-msgstr "编辑"
+msgstr "ed"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -95,23 +95,7 @@ msgstr "页"
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Categories"
-msgstr "类别"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://cn.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "基于 WordPress，优美的个人信息发布平台。"
+msgstr "类型"
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -131,12 +115,13 @@ msgstr "您的评论需要审核…"
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$s %2$s"
+msgstr "%1$s于%2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "精细 Pro 清洁和反应迅速的 Wordpress 主题"
 
+#: ../../functions.php
 msgid "Header Image"
 msgstr "顶端图像"
 
@@ -225,7 +210,20 @@ msgstr "搜索结果：%s"
 
 #: ../../searchform.php
 msgid "Search"
-msgstr "查找"
+msgstr "搜索"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://cn.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "基于 WordPress，优美的个人信息发布平台。"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
@@ -233,7 +231,7 @@ msgstr "订阅"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "条目 (RSS)"
+msgstr "条目（RSS）"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"

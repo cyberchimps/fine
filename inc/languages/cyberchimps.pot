@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 12:16:18 UTC\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 12:14:47 UTC\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: English, United States\n"
 "MIME-Version: 1.0\n"
@@ -115,31 +115,6 @@ msgstr "Pages"
 msgid "Categories"
 msgstr "Categories"
 
-#: ../../footer.php
-#: ../../footer.php
-#: ../../sidebar-left.php
-#: ../../sidebar-left.php
-#: ../../sidebar-right.php
-#: ../../sidebar-right.php
-#: ../../sidebar.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php
-#: ../../sidebar-left.php
-#: ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: ../../footer.php
-#: ../../sidebar-left.php
-#: ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-
 #: ../../functions.php
 msgid "Pingback:"
 msgstr "Pingback:"
@@ -162,7 +137,7 @@ msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "Fine Pro a Clean and Responsive Wordpress Theme"
 
 #: ../../functions.php
@@ -249,6 +224,27 @@ msgstr "Search Results for: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "Search"
+
+#: ../../sidebar-left.php
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 
 #: ../../sidebar-left.php
 #: ../../sidebar-right.php

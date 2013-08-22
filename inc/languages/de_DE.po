@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:32+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:53+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: German, Germany\n"
 "MIME-Version: 1.0\n"
@@ -97,24 +97,6 @@ msgstr "Seiten"
 msgid "Categories"
 msgstr "Kategorien"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://de.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Powered by WordPress, semantische persönliche publishing-Plattform von State "
-"of Art."
-
 #: ../../functions.php
 msgid "Pingback:"
 msgstr "Pingback (Kurzfassung):"
@@ -136,7 +118,7 @@ msgid "%1$s at %2$s"
 msgstr "%1$s um %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "Feine Pro ein sauber und reaktionsschnelle Wordpress-Theme"
 
 #: ../../functions.php
@@ -165,7 +147,7 @@ msgstr "in"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "Zurück"
+msgstr "Früher"
 
 #: ../../image.php
 msgid "Next"
@@ -234,6 +216,21 @@ msgstr "Suchergebnisse für: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "sch"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://de.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Powered by WordPress, semantische persönliche publishing-Plattform von State "
+"of Art."
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:33+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:52+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: French, France\n"
 "MIME-Version: 1.0\n"
@@ -93,23 +93,6 @@ msgstr "Pages"
 msgid "Categories"
 msgstr "Cat馮ories"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://fr.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Propulsé par WordPress, plate-forme de publication sémantique personnelle."
-
 #: ../../functions.php
 msgid "Pingback:"
 msgstr "Ping"
@@ -128,10 +111,10 @@ msgstr "Votre commentaire est en attente de modération"
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$ s %2$ s"
+msgstr "%1$s à %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "Fine Pro un thème Wordpress propre et réactive"
 
 #: ../../functions.php
@@ -184,7 +167,7 @@ msgstr "Les commentaires sont clos mais vous pouvez laisser un rétrolien :"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can"
-msgstr "Rétroliens sont fermés, mais vous pouvez %s"
+msgstr "Les rétroliens sont fermés mais vous pouvez"
 
 #: ../../image.php
 msgid "post a comment"
@@ -226,6 +209,20 @@ msgstr "Résultats de recherche pour %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "chr"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://fr.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Propulsé par WordPress, plate-forme de publication sémantique personnelle."
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

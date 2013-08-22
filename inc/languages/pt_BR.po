@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:32+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:52+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Portuguese, Brazil\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Arquivos da Tag: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Arquivo do Autor: %s"
+msgstr "Arquivos do Autor:%s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
@@ -97,24 +97,6 @@ msgstr "Páginas"
 msgid "Categories"
 msgstr "Categorias"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://pt.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Alimentado por WordPress, plataforma de publicação pessoal semântica estado-"
-"da-arte."
-
 msgid "Pingback:"
 msgstr "Pingback:"
 
@@ -132,12 +114,13 @@ msgstr "Seu comentário está aguardando moderação."
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$s em %2$s"
+msgstr "%1$s às %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "Tudo bem Pro um tema Wordpress limpo e ágil"
 
+#: ../../functions.php
 msgid "Header Image"
 msgstr "A Sua Imagem de Cabeçalho"
 
@@ -163,15 +146,15 @@ msgstr "em"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "Anterior"
+msgstr "anterior"
 
 #: ../../image.php
 msgid "Next"
-msgstr "Próximo"
+msgstr "próximo"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Postar um comentário"
+msgstr "postar um comentário"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -190,7 +173,7 @@ msgstr "Trackbacks estão fechados, mas você pode"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Postar um comentário"
+msgstr "postar um comentário"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
@@ -230,6 +213,21 @@ msgstr "Resultados da busca por: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "Busca"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://pt.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Criado com WordPress, plataforma de publicação pessoal sem&acirc;ntica de "
+"vanguarda."
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

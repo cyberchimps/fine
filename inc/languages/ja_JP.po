@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:33+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:52+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Japanese, Japan\n"
 "MIME-Version: 1.0\n"
@@ -77,7 +77,7 @@ msgstr "パーマへ%s"
 
 #: ../../content.php
 msgid "Continue reading"
-msgstr "読み続ける"
+msgstr "続きを読む"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
@@ -96,24 +96,6 @@ msgstr "ページ"
 #: ../../sidebar.php
 msgid "Categories"
 msgstr "部類"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "ワードプレス"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://ja.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"最新の意味個人的なパブリッシング ・ プラットフォームのワードプレスによって供"
-"給。"
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -136,9 +118,10 @@ msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "罰金のプロきれいなワードプレスのテーマ"
 
+#: ../../functions.php
 msgid "Header Image"
 msgstr "ヘッダー画像"
 
@@ -232,6 +215,21 @@ msgstr "検索結果: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "検索"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "ワードプレス"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://ja.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"最新の意味個人的なパブリッシング ・ プラットフォームのワードプレスによって供"
+"給。"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

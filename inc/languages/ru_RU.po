@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:32+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:52+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Russian, Russia\n"
 "MIME-Version: 1.0\n"
@@ -100,24 +100,7 @@ msgstr "Страниц"
 msgid "Categories"
 msgstr "Рубрики"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://ru.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Сайт работает на WordPress &#8212; современной системе персональных "
-"публикаций."
-
+#: ../../functions.php
 msgid "Pingback:"
 msgstr "Уведомление"
 
@@ -138,9 +121,10 @@ msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "Штраф Pro чистой и отзывчивым тема Wordpress"
 
+#: ../../functions.php
 msgid "Header Image"
 msgstr "Картинка для шапки"
 
@@ -166,15 +150,15 @@ msgstr "в"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "ранее"
+msgstr "Пред."
 
 #: ../../image.php
 msgid "Next"
-msgstr "След."
+msgstr "след."
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Оставить комментарий"
+msgstr "оставить комментарий"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -194,7 +178,7 @@ msgstr "Trackbacks закрыты, но вы можете"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Оставить комментарий"
+msgstr "оставить комментарий"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
@@ -233,6 +217,21 @@ msgstr "Результаты по запросу: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "Найти"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://ru.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Сайт работает на WordPress &#8212; современной системе персональных "
+"публикаций."
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:33+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:52+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Dutch, Netherlands\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "Tagarchief: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Auteur Archief: %s"
+msgstr "Auteursarchief: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
@@ -99,25 +99,8 @@ msgstr "Paginas"
 msgid "Categories"
 msgstr "Categorieën"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "http://wordpress.org/"
-msgstr "http://nl.wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Powered by WordPress"
-
-#: ../../functions.php
 msgid "Pingback:"
-msgstr ""
+msgstr "Pingback:"
 
 #: ../../functions.php
 msgid "(Edit)"
@@ -133,12 +116,13 @@ msgstr "Je reactie moet nog  worden goedgekeurd."
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$s op %2$s"
+msgstr "%1$s om %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "Fijne Pro een schoon en responsieve Wordpress thema"
 
+#: ../../functions.php
 msgid "Header Image"
 msgstr "Je koptekstafbeelding"
 
@@ -172,7 +156,7 @@ msgstr "Verder"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Plaats een reactie"
+msgstr "plaats een reactie"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -191,7 +175,7 @@ msgstr "Trackbacks zijn gesloten, maar u kunt"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Plaats een reactie"
+msgstr "plaats een reactie"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
@@ -230,6 +214,19 @@ msgstr "Zoekresultaten voor: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "sch"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "http://wordpress.org/"
+msgstr "http://nl.wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Powered by WordPress"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

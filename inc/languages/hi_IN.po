@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fine Pro\n"
+"Project-Id-Version: Fine Free\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-12 11:18:24 UTC\n"
-"PO-Revision-Date: 2013-08-12 18:32+0530\n"
+"POT-Creation-Date: 2013-08-19 10:03:37 UTC\n"
+"PO-Revision-Date: 2013-08-22 17:53+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Hindi, India\n"
 "MIME-Version: 1.0\n"
@@ -66,11 +66,11 @@ msgstr "पुराना टिप्पणियाँ"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "नई टिप्पणियाँ"
+msgstr "टिप्पणियां नए"
 
 #: ../../comments.php
 msgid "Comments are closed."
-msgstr "टिप्पणियाँ बंद हो जाती हैं।"
+msgstr "टिप्पणियाँ बंद हो जाती हैं."
 
 #: ../../content.php
 msgid "Permalink to %s"
@@ -98,22 +98,8 @@ msgstr "पृष्ठ"
 msgid "Categories"
 msgstr "श्रेणी"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid "WordPress"
-msgstr "WordPress"
-
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "WordPress, राज्य के कला अर्थ निजी प्रकाशन मंच द्वारा संचालित है."
-
 msgid "Pingback:"
-msgstr "Pingback:"
+msgstr "Pingback"
 
 #: ../../functions.php
 msgid "(Edit)"
@@ -132,9 +118,10 @@ msgid "%1$s at %2$s"
 msgstr "%1$s पर %2$s"
 
 #: ../../functions.php
-msgid "Fine Pro a Clean and Responsive Wordpress Theme"
+msgid "Fine Free Professional Responsive WordPress Theme"
 msgstr "प्रो ठीक है एक स्वच्छ और उत्तरदायी Wordpress थीम"
 
+#: ../../functions.php
 msgid "Header Image"
 msgstr "हैडर छवि"
 
@@ -228,6 +215,18 @@ msgstr "खोज परिणाम के लिए: %s"
 #: ../../searchform.php
 msgid "Search"
 msgstr "खोज"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "WordPress, राज्य के कला अर्थ निजी प्रकाशन मंच द्वारा संचालित है."
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
