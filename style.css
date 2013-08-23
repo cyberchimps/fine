@@ -1104,39 +1104,32 @@ section.full-width-container.footer-full-width {
 /******************************************** ELEMENTS **************************************************************/
 /********************************************************************************************************************/
 
-/*==================================== WIDGET BOXES ===============================================*/
+/*==================================== BOXES LIGHT ======================================================*/
 
-#widget_boxes_container .box {
+#widget-boxes-container .box {
   margin-bottom: 30px;
   background: #ffffff;
 }
 
-#widget_boxes_container .box {
+#widget-boxes-container .box {
   margin-bottom: 40px;
   padding: 20px;
 }
 
-h2.box-widget-title {
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 1.6em;
-}
-
-.box p {
+#widget-boxes-container .box p {
+  margin-top: 20px;
   text-align: center;
   font-size: 1.1em;
   line-height: 1.5em;
 }
 
-/*==================================== BOXES ======================================================*/
-
-#boxes_container .box {
+#widget-boxes-container .box {
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 20px 20px 0;
   background: #ffffff;
 }
 
-#boxes_container .box a {
+#widget-boxes-container .box a {
   display: block;
   width: 100%;
   text-align: center;
@@ -1152,11 +1145,16 @@ img.box-image:hover {
 
 /* ==================================== PORTFOLIO ================================================== */
 
-#portfolio_pro_section {
+#portfolio_lite_section {
   margin-bottom: 30px;
 }
 
-#portfolio_pro_section ul {
+#portfolio_lite_section h2 {
+  color: #cc5700;
+  margin-bottom: 20px;
+}
+
+#portfolio_lite_section ul {
   margin-left: 0;
 }
 
@@ -1166,7 +1164,7 @@ img.box-image:hover {
 
 /*==================================== SLIDER ======================================================*/
 
-#page_slider_section {
+#slider_lite_section {
   margin-bottom: 30px;
 }
 
