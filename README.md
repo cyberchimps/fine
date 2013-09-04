@@ -18,3 +18,5 @@ jCarousel is dual licensed under the MIT (http://www.opensource.org/licenses/mit
 Slimbox is licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
 
 jQuery UI Touch Punch is dual licensed under the MIT or GPL Version 2 licenses.
+
+Noto Sans and Imprima Fonts are licensed under the Creative Commons license (http://creativecommons.org/licenses/by/3.0/) Google.com
