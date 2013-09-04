@@ -617,6 +617,8 @@ h2.entry-title {
   padding: 0;
   text-shadow: none;
   font: 36px/1.3em;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
 }
 
 h2.entry-title a {
