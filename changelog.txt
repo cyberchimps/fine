@@ -2,7 +2,14 @@ Fine Pro Changelog
 
 ****************************
 
-Version 1.0.0.1 (9-6-13)
+Version 1.0.0.4 (9-20-13)
+- Slider option from post is removed as it was not part of free themes.
+- Fixed google font issue.
+
+Version 1.0.0.3 (9-13-13)
+- Updated README file.
+
+Version 1.0.0.2 (9-6-13)
 - Minified multi media upload.
 - Meta box fix - changed save_post hook to pre_post_update.
 - Wrapped home_url() with esc_url()
