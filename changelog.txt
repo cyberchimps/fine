@@ -2,6 +2,9 @@ Fine Pro Changelog
 
 ****************************
 
+Version 1.0.0.7 (10-11-13)
+- Changed ID name separator to (_) from (-) for elements/boxes.php
+
 Version 1.0.0.6 (10-4-13)
 - Minified JS.
 - Reformatted code( Replaced spaces with tabs ).
