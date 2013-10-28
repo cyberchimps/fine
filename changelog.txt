@@ -2,6 +2,10 @@ Fine Pro Changelog
 
 ****************************
 
+Version 1.0.0.9 (10-28-13)
+- Slider lite ID separator change from (-) to(_). Changed affected JS and CSS.
+- Changed readme.md to readme.txt
+
 Version 1.0.0.8 (10-18-13)
 - Container width fix.
 - Added class cc-responsive if responisve design is on.
