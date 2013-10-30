@@ -3,7 +3,7 @@ Fine Free responsive Wordpress theme
 
 - Fine Free
 - by CyberChimps http://cyberchimps.com
-- Licensed under GNU General Public License v2.0 - http://www.gnu.org/licenses/gpl-2.0.html
+- Licensed under GNU General Public License v3.0 - http://www.gnu.org/licenses/gpl-3.0.html
 
 - Bootstrap
 - Adds core styles and responsive structure
@@ -32,8 +32,8 @@ Fine Free responsive Wordpress theme
 
 - Noto Sans and Imprima
 - Fonts using @import from Google
-- by Google http://www.google.com/fonts
-- licensed under the Creative Commons license (http://creativecommons.org/licenses/by/3.0/) Google.com
+- Noto Sans by Google http://www.google.com/fonts. It is licensed under the Apache License, version 2.0 : http://www.apache.org/licenses/LICENSE-2.0.html
+- Imprima is licensed under the SIL OFL 1.1 license : http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
 - Magazine Image
 - the magazine image used by default in the header image
@@ -42,7 +42,7 @@ Fine Free responsive Wordpress theme
 
 - All other images
 - by CyberChimps http://cyberchimps.com
-- Licensed under GNU General Public License v2.0 - http://www.gnu.org/licenses/gpl-2.0.html
+- Licensed under GNU General Public License v3.0 - http://www.gnu.org/licenses/gpl-3.0.html
 
 ====================================================================================================================================
 
