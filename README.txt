@@ -32,7 +32,8 @@ Fine Free responsive Wordpress theme
 
 - Noto Sans and Imprima
 - Fonts using @import from Google
-- Noto Sans by Google http://www.google.com/fonts. It is licensed under the Apache License, version 2.0 : http://www.apache.org/licenses/LICENSE-2.0.html
+- http://www.google.com/fonts
+- Noto Sans is licensed under the Apache License, version 2.0 : http://www.apache.org/licenses/LICENSE-2.0.html
 - Imprima is licensed under the SIL OFL 1.1 license : http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
 - Magazine Image
