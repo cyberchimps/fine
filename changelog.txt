@@ -2,6 +2,9 @@ Fine Pro Changelog
 
 ****************************
 
+Version 1.0.10 (11-1-13)
+- Added new metabox class.
+
 Version 1.0.0.9 (10-30-13)
 - Slider lite ID separator change from (-) to(_). Changed affected JS and CSS.
 - Changed readme.md to readme.txt
