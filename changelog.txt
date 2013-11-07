@@ -2,6 +2,9 @@ Fine Pro Changelog
 
 ****************************
 
+Version 1.0.11 (11-7-13)
+- Removed unused code
+
 Version 1.0.10 (11-1-13)
 - Added new metabox class.
 
