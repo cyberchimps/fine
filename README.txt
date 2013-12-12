@@ -1,4 +1,4 @@
-Fine Free responsive Wordpress theme
+Fine Free responsive WordPress theme
 ====================================
 
 - Fine Free, Copyright 2013
