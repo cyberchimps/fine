@@ -551,6 +551,7 @@ article {
 
 .postformats {
 	float: right;
+	margin-top: 12px;
 }
 
 blockquote {
