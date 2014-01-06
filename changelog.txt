@@ -2,6 +2,10 @@ Fine Pro Changelog
 
 ****************************
 
+Version 1.0.19 (1-6-14)
+- Modified Helvetica font-family.
+- Removed translation of a variable.
+
 Version 1.0.18 (12-23-13)
 - Fixed drag and drop font icons on page options.
 - Added metabox field type unfiltered_textarea.
