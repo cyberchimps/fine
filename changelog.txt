@@ -1,6 +1,9 @@
-Fine Pro Changelog
+Fine Changelog
 
 ****************************
+
+Version 1.0.27 (2-20-14)
+- Added word-break to body to stop long words breaking out if their container
 
 Version 1.0.26 (2-18-14)
 - Slider is made to be start sliding on page load.
