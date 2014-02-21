@@ -173,6 +173,7 @@ header#cc-header .span7, header#cc-header .span5 {
 
 header #social {
 	width: 100%;
+	
 }
 
 header #social div {
@@ -183,6 +184,7 @@ header #social div {
 header #social a.symbol {
 	float: none;
 	padding: 0 5px;
+	font-size: 2em;
 }
 
 /*======================================= DETAILS =============================================*/
@@ -1131,6 +1133,7 @@ section.full-width-container.footer-full-width {
 	text-align: center;
 	font-size: 1.1em;
 	line-height: 1.5em;
+	word-break: normal;
 }
 
 #widget_boxes_container .box a {
