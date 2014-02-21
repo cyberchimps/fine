@@ -171,13 +171,18 @@ header#cc-header .span7, header#cc-header .span5 {
 
 /*======================================= SOCIAL ==============================================*/
 
-header #social .icons a {
-	margin-left: 5px;
+header #social {
+	width: 100%;
 }
 
-header #social .icons a img {
-	width: 20px;
-	height: auto;
+header #social div {
+	width: 100%;
+	text-align: center;
+}
+
+header #social a.symbol {
+	float: none;
+	padding: 0 5px;
 }
 
 /*======================================= DETAILS =============================================*/
