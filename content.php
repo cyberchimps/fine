@@ -24,6 +24,7 @@
 		<div class="entry-meta">
 			<?php if( 'post' == get_post_type() ) {
 				cyberchimps_posted_on();
+				cyberchimps_posted_by();
 			}
 			cyberchimps_post_comments() ?>
 		</div>
