@@ -22,7 +22,7 @@
 
 body {
 	color: #555555;
-	word-break: break-all;
+	word-wrap: break-word;
 }
 
 @media (max-width: 767px) {
