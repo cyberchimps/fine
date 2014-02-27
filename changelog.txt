@@ -2,6 +2,16 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.28 (2-27-14)
+- Updated elements images along with boxes images.
+- Fixed Read more text option.
+- Responsive toggle fix: tweaked full-width-container width.
+- Background option fix.
+- Removed post format icon from page.
+- Updated screenshot.
+- Added byline author.
+- Fixed word wrap.
+
 Version 1.0.27 (2-20-14)
 - Added word-break to body to stop long words breaking out if their container
 
