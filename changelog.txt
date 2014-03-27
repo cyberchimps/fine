@@ -2,6 +2,9 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.32 (3-27-14)
+- Updated Elements Translation.
+
 Version 1.0.31 (3-21-14)
 - Updated support forum URL.
 - Fixed IE8 compatibility issue.
