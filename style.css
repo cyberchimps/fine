@@ -269,6 +269,11 @@ header #search #searchform .search-query {
 /*==================================== MEDIA QUERIES ===========================================*/
 
 @media (max-width: 979px) {
+
+	header#cc-header.row-fluid {
+		padding: 20px 20px 20px;
+	}
+
 	.full-width-container #header_nav_container {
 		padding: 10px;
 		background: rgba(0, 0, 0, 0.7)
@@ -313,6 +318,14 @@ header #search #searchform .search-query {
 		font-size: 1em;
 	}
 
+	h2.site-title a{
+		font-size: 1.2em;
+		font-size: 5vw;
+	}
+	h2.site-title{
+		line-height: 30px;
+	}
+
 	header#cc-header.row-fluid {
 		padding: 30px 10px 10px;
 	}
@@ -328,6 +341,35 @@ header #search #searchform .search-query {
 
 	.main-navigation .navbar-inner .nav {
 		margin-left: 0;
+	}
+}
+
+@media (max-width: 480px) {
+
+	header#cc-header.row-fluid {
+		position: static;
+		display: block;
+		margin: -15px 0 0;
+		padding: 50px 20px 20px;
+		box-sizing: border-box;
+	}
+
+	h2.site-title a{
+		font-size: 1em;
+		font-size: 6vw;
+	}
+	h2.site-title{
+		line-height: 20px;
+	}
+	header#cc-header.row-fluid{
+		padding-top: 15px;
+	}
+	#header_nav_container .span4 {
+		padding: 0 20px;
+		width: 100%;
+	}
+	#social {
+		margin-top: 7px;
 	}
 }
 
@@ -1193,37 +1235,5 @@ img.box-image:hover {
 @media (max-width: 767px) {
 	#pagination .container {
 		margin-left: 20px;
-	}
-}
-
-/********************************************************************************************************************/
-/****************************************** MEDIA QUERIES ***********************************************************/
-/********************************************************************************************************************/
-
-/*==================================== TABLETS ====================================================*/
-
-@media (max-width: 767px) {
-	h2.site-title a{
-		font-size: 1.2em;
-		font-size: 5vw;
-	}
-	h2.site-title{
-		line-height: 30px;
-	}
-}
-
-/*==================================== PHONES ====================================================*/
-
-@media (max-width: 480px) {
-	
-	h2.site-title a{
-		font-size: 1em;
-		font-size: 6vw;
-	}
-	h2.site-title{
-		line-height: 20px;
-	}
-	header#cc-header.row-fluid{
-		padding-top: 15px;
 	}
 }
