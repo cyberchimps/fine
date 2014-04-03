@@ -2,6 +2,11 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.33 (4-3-14)
+- Added new background option.
+- Site title style fix for smaller screen.
+- Removed wp_register_style(or script) for local css/js files.
+
 Version 1.0.32 (3-27-14)
 - Updated Elements Translation.
 
