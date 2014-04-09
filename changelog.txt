@@ -2,6 +2,10 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.34 (4-9-14)
+-Added upgrade button to the free theme customizer.
+-Fixed Vimeo video responsiveness.
+
 Version 1.0.33 (4-3-14)
 - Added new background option.
 - Site title style fix for smaller screen.
