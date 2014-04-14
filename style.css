@@ -183,8 +183,9 @@ header #social div {
 
 header #social a.symbol {
 	float: none;
-	padding: 0 5px;
-	font-size: 2em;
+	width: 20px;
+	height: 20px;
+	font-size: 1em;
 }
 
 /*======================================= DETAILS =============================================*/
