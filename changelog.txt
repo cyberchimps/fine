@@ -3,6 +3,9 @@ Fine Changelog
 ****************************
 
 Version 1.0.36 (4-24-14)
+- Uploading again due to technical problem.
+
+Version 1.0.36 (4-24-14)
 - Added recommendation for clef plugin.
 - Updated translations.
 - Youtube video fixed.
