@@ -2,6 +2,9 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.45 (6-20-14)
+- Code reformatting: Changed spaces to tabs.
+
 Version 1.0.44 (6-13-14)
 - Code reformatted: Changed spaces to tabs.
 
