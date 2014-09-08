@@ -2,6 +2,9 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.53 (9-08-14)
+- Added iFeature slider to plugin suggestion list.
+
 Version 1.0.52 (8-22-14)
 - Updated Translations.
 
