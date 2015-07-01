@@ -326,6 +326,30 @@ function cyberchimps_remove_default_options( $orig ) {
 
 add_filter( 'cyberchimps_field_filter', 'cyberchimps_remove_default_options' );
 
+/* Add Header Image in customizer and remove searchbar from header option */
+
+add_action( 'customize_register', 'fine_customize_register', 50 );
+
+    function fine_customize_register( $wp_customize ) {
+        $wp_customize->remove_setting( 'cyberchimps_options[searchbar]' );
+        $wp_customize->remove_control( 'searchbar' );
+        // Add header image
+        $wp_customize->add_setting( 'cyberchimps_options[header_image]', array(
+            'description' => __( 'The image used for the header needs to be a large image. We recommend a minimum width of 1000px and a maximum height of 550px', 'fine' ),
+            'default' => get_template_directory_uri() . '/images/header.jpg',
+            'type' => 'option',
+            'sanitize_callback' => 'cyberchimps_text_sanitization'
+        ) );
+
+       $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_image', array(
+        'label' => __( 'Upload Header Image', 'cyberchimps_core' ),
+        'priority' => 4,
+        'section' => 'cyberchimps_header_section',
+        'settings' => 'cyberchimps_options[header_image]',
+        'type' => 'image',
+    ) ) );
+}
+
 /**
  * Removes the banner section
  *
