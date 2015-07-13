@@ -338,7 +338,7 @@ add_action( 'customize_register', 'fine_customize_register', 50 );
             'description' => __( 'The image used for the header needs to be a large image. We recommend a minimum width of 1000px and a maximum height of 550px', 'fine' ),
             'default' => get_template_directory_uri() . '/images/header.jpg',
             'type' => 'option',
-            'sanitize_callback' => 'cyberchimps_text_sanitization'
+            'sanitize_callback' => 'cyberchimps_sanitize_images'
         ) );
 
        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_image', array(
