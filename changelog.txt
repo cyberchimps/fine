@@ -2,9 +2,14 @@ Fine Changelog
 
 ****************************
 
+Version 1.0.60 (28-04-16)
+- Fixed site font issue
+
+Version 1.0.59 (2-12-15)
+- Fix few minor issues related to customization
+
 Version 1.0.58 (17-07-15)
 - Change in theme customizer as per wordpress.org guidelines
-
 
 Version 1.0.57 (1-23-15)
 - Fixed conflict between slider free and pro plugin.
