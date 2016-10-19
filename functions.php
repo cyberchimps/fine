@@ -18,6 +18,7 @@
 // Load text domain.
 function cyberchimps_text_domain() {
 	load_theme_textdomain( 'fine', get_template_directory() . '/inc/languages' );
+	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
@@ -365,4 +366,122 @@ function cyberchimps_header_drag_and_drop_defaults( $orig ) {
 }
 
 add_filter( 'header_drag_and_drop_options', 'cyberchimps_header_drag_and_drop_defaults', 20 );
+
+/* BEGIN  Added by Swapnil - on 19-Oct 2016 for adding new feature for menu coloer change */
+
+add_action( 'customize_register', 'fine_add_custmozier_field', 20 );
+function fine_add_custmozier_field( $wp_customize ) {
+
+$wp_customize->add_setting( 'cyberchimps_options[menu_background_colorpicker]', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'cyberchimps_text_sanitization'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_background_colorpicker', array(
+        'label' => __( 'Menu Background Color', 'fine' ),
+        'section' => 'cyberchimps_design_section',
+        'settings' => 'cyberchimps_options[menu_background_colorpicker]',
+    ) ) );
+
+
+$wp_customize->add_setting( 'cyberchimps_options[menu_hover_colorpicker]', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'cyberchimps_text_sanitization'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_hover_colorpicker', array(
+        'label' => __( 'Menu Hover Color', 'fine' ),
+        'section' => 'cyberchimps_design_section',
+        'settings' => 'cyberchimps_options[menu_hover_colorpicker]',
+    ) ) );
+
+$wp_customize->add_setting( 'cyberchimps_options[menu_text_colorpicker]', array(
+        'default' => '',
+        'type' => 'option',
+        'sanitize_callback' => 'cyberchimps_text_sanitization'
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'menu_text_colorpicker', array(
+        'label' => __( 'Menu Text Color', 'fine' ),
+        'section' => 'cyberchimps_design_section',
+        'settings' => 'cyberchimps_options[menu_text_colorpicker]',
+    ) ) );
+}
+
+
+add_filter( 'cyberchimps_field_list', 'fine_add_field' , 30 , 1 );
+function fine_add_field($fields_list){
+$fields_list[] = array(
+		'name'    => __( 'Menu Background Color', 'fine' ),
+		'desc'    => __( 'Select menu background color', 'fine' ),
+		'id'      => 'menu_background_colorpicker',
+		'std'     => '',
+		'type'    => 'color',
+		'section' => 'cyberchimps_custom_colors_section',
+		'heading' => 'cyberchimps_design_heading'
+	);
+
+$fields_list[] = array(
+		'name'    => __( 'Menu Hover Color', 'fine' ),
+		'desc'    => __( 'Select menu hover color', 'fine' ),
+		'id'      => 'menu_hover_colorpicker',
+		'std'     => '',
+		'type'    => 'color',
+		'section' => 'cyberchimps_custom_colors_section',
+		'heading' => 'cyberchimps_design_heading'
+	);
+
+$fields_list[] = array(
+		'name'    => __( 'Menu Text Color', 'fine' ),
+		'desc'    => __( 'Select color for menu text', 'fine' ),
+		'id'      => 'menu_text_colorpicker',
+		'std'     => '',
+		'type'    => 'color',
+		'section' => 'cyberchimps_custom_colors_section',
+		'heading' => 'cyberchimps_design_heading'
+	);
+
+return $fields_list;
+
+}
+
+add_action( 'wp_head', 'fine_css_styles', 50 );
+function fine_css_styles(){
+	$menu_background = cyberchimps_get_option( 'menu_background_colorpicker' );
+	$menu_text = cyberchimps_get_option( 'menu_text_colorpicker' );
+	$menu_hover = cyberchimps_get_option( 'menu_hover_colorpicker' );
+?>
+	<style type="text/css" media="all">
+		<?php if ( !empty( $menu_background ) ) : ?>
+			.main-navigation .navbar-inner {
+			background-color: <?php echo $menu_background; ?>;
+			}
+
+			#header_nav_container .row-fluid {
+			background-color: <?php echo $menu_background; ?>;
+			}
+		<?php endif; ?>
+
+		<?php if ( !empty( $menu_hover ) ) : ?>
+			.main-navigation .navbar-inner div > ul > li > a:hover {
+			background-color: <?php echo $menu_hover; ?>;
+			}
+			header#cc-header.row-fluid {
+			background-color: <?php echo $menu_hover; ?>;
+			}
+		<?php endif; ?>
+
+		<?php if ( !empty( $menu_text ) ) : ?>
+			.main-navigation .nav > li > a, .main-navigation .nav > li > a:hover {
+			color: <?php echo $menu_text; ?>;
+			}
+
+		<?php endif; ?>
+	</style>
+<?php	
+}
+
+/* END  Added by Swapnil - on 19-Oct 2016 for adding new feature for menu coloer change */
 ?>
