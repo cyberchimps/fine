@@ -3,7 +3,7 @@ Fine Changelog
 ****************************
 
 Version 1.2 (27-12-16)
-- Fixed allignment issue for submenu in sidebar
+- Fixed allignment issue for submenu in widgets
 
 Version 1.1 (20-10-16)
 - Changes done as per the new WordPress guideline
