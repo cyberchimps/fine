@@ -1243,3 +1243,9 @@ img.box-image:hover {
 {
 	margin-left:5%;
 }
+
+/* To allign custome menu(submenu) in footer */
+#footer-widgets .sub-menu
+{
+	margin-left:5%;
+}
