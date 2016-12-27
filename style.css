@@ -4,7 +4,7 @@
  * Author: CyberChimps
  * Author URI: http://www.cyberchimps.com/
  * Description: Fine Free is a Responsive WordPress theme offering a fun easy to use Drag & Drop system that adds amazing new functionality to your WordPress website. Featuring responsive touch friendly theme options that work on any device, fully SEO optimized, dynamic sidebar layouts, and per-page dynamic templates. Powered by WordPress, Twitter Bootstrap, HTML5, and CSS3. Please use the <a href="http://cyberchimps.com/forum/">official support forum</a> (http://cyberchimps.com/forum/). Thank you.
- * Version: 1.1
+ * Version: 1.2
  * Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post, full-width-template
  * Text Domain: fine
  * License: GNU General Public License version 3
@@ -1235,4 +1235,11 @@ img.box-image:hover {
 	#pagination .container {
 		margin-left: 20px;
 	}
+}
+
+
+/* To allign custome menu(submenu) in sidebars */
+#sidebar .sub-menu
+{
+	margin-left:5%;
 }
