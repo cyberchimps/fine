@@ -522,6 +522,10 @@ function fine_customize_edit_links( $wp_customize ) {
 		'selector' => '#navigation .nav'
 	) );
 
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[header_image]', array(
+		'selector' => '#header_nav_container'
+	) );
+
 }
 add_action( 'customize_register', 'fine_customize_edit_links' );
 add_theme_support( 'customize-selective-refresh-widgets' );
