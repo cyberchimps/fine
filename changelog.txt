@@ -1,6 +1,9 @@
 Fine Changelog
 
 ****************************
+Version 1.4 (11-07-17)
+- Added visible edit links in the customizer preview
+
 Version 1.3 (12-04-17)
 - Fixed issue with PHP 7.1 
 - Fixed issue with loading google fonts (used protocol relative link)
