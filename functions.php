@@ -544,3 +544,185 @@ function fine_rating_notice()
     <?php
 	}
 }
+
+// Contact Form Heading for Theme Options
+function cyberchimps_contact_form_heading( $headings_list ) {
+	$headings_list[] = array(
+		'id'    => 'cyberchimps_contact_heading',
+		'title' => __( 'Contact Form', 'cyberchimps_core' ),
+	);
+
+	return $headings_list;
+}
+
+add_filter( 'cyberchimps_headings_filter', 'cyberchimps_contact_form_heading', 20, 1 );
+
+add_filter( 'cyberchimps_section_list', 'cyberchimps_contact_form_sections', 20 );
+function cyberchimps_contact_form_sections( $sections_list ) {
+
+$sections_list[] = array(
+	'id'      => 'cyberchimps_contact_section',
+	'label'   => __( 'Contact Form Options', 'cyberchimps_core' ),
+	'heading' => 'cyberchimps_contact_heading'
+);
+
+return apply_filters( 'cyberchimps_sections_filter', $sections_list );
+}
+
+function cyberchimps_contact_form_fields( $fields_list ) {
+
+	$fields_list[] = array(
+			'name'    => __( 'Contact Form On/Off', 'cyberchimps_core' ),
+			'id'      => 'contact_form_switch',
+			'std'     => 0,
+			'type'    => 'toggle',
+			'section' => 'cyberchimps_contact_section',
+			'heading' => 'cyberchimps_contact_heading'
+		);
+
+$fields_list[] = array(
+	'id'      => 'contact_form_heading',
+	'name'    => __( 'Contact Form Heading', 'cyberchimps_core' ),
+	'std'     => 'Contact Us',
+	'type'    => 'text_html',
+	'section' => 'cyberchimps_contact_section',
+	'heading' => 'cyberchimps_contact_heading'
+);
+
+$fields_list[] = array(
+	'id'      => 'contact_form_shortcode',
+	'name'    => __( 'Contact Form Shortcode', 'cyberchimps_core' ),
+	'type'    => 'text_html',
+	'section' => 'cyberchimps_contact_section',
+	'heading' => 'cyberchimps_contact_heading'
+);
+
+$directory_uri = get_template_directory_uri();
+
+$fields_list[] = array(
+	'id'      => 'custom_back_image_uploader',
+	'name'    => __( 'Background Image', 'cyberchimps_core' ),
+	'desc'    => __( 'Enter URL or upload file', 'cyberchimps_core' ),
+	'type'    => 'upload',
+	'std'     => apply_filters( 'cyberchimps_default_logo', $directory_uri . '/images/contact_bg.jpg' ),
+	'section' => 'cyberchimps_contact_section',
+	'heading' => 'cyberchimps_contact_heading'
+);
+
+return apply_filters( 'cyberchimps_field_filter', $fields_list );
+}
+
+add_filter( 'cyberchimps_field_list', 'cyberchimps_contact_form_fields', 20 );
+
+add_action( 'customize_register', 'fine_contact_form_register', 50 );
+function fine_contact_form_register( $wp_customize ) {
+
+	    $wp_customize->add_setting( 'cyberchimps_options[contact_form_switch]', array(
+	        'type' => 'option',
+	        'sanitize_callback' => 'cyberchimps_sanitize_checkbox'
+	    ) );
+
+	    $wp_customize->add_control( 'contact_form_switch', array(
+	        'label' => __( 'Contact Form On/Off', 'cyberchimps_core' ),
+	        'section' => 'static_front_page',
+	        'settings' => 'cyberchimps_options[contact_form_switch]',
+	        'type' => 'checkbox'
+	    ) );
+
+			$wp_customize->add_setting( 'cyberchimps_options[contact_form_heading]', array(
+				'type' => 'option',
+				'sanitize_callback' => 'cyberchimps_text_sanitization'
+			) );
+			$wp_customize->add_control( 'contact_form_heading', array(
+				'label' => __( 'Contact Form Heading', 'cyberchimps_core' ),
+				'section' => 'static_front_page',
+				'settings' => 'cyberchimps_options[contact_form_heading]',
+				'type' => 'text'
+			) );
+
+			$wp_customize->add_setting( 'cyberchimps_options[contact_form_shortcode]', array(
+				'type' => 'option',
+				'sanitize_callback' => 'cyberchimps_text_sanitization'
+			) );
+			$wp_customize->add_control( 'contact_form_shortcode', array(
+				'label' => __( 'Contact Form Shortcode', 'cyberchimps_core' ),
+				'section' => 'static_front_page',
+				'settings' => 'cyberchimps_options[contact_form_shortcode]',
+				'type' => 'text'
+			) );
+
+			$wp_customize->add_setting( 'cyberchimps_options[custom_back_image_uploader]', array(
+					'default' => get_template_directory_uri() . '/images/contact_bg.jpg',
+					'type' => 'option',
+					'sanitize_callback' => 'cyberchimps_sanitize_upload'
+			) );
+			$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'custom_back_image_uploader', array(
+					'label' => __( 'Contact Form Background Image', 'cyberchimps_core' ),
+					'section' => 'static_front_page',
+					'settings' => 'cyberchimps_options[custom_back_image_uploader]',
+					'type' => 'image',
+			) ) );
+}
+
+add_action( 'admin_notices', 'fine_admin_notices' );
+function fine_admin_notices()
+{
+	$admin_check_screen = get_admin_page_title();
+
+	if( !class_exists('SlideDeckPlugin') )
+	{
+	$plugin='slidedeck/slidedeck.php';
+	$slug = 'slidedeck';
+	$installed_plugins = get_plugins();
+
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+		?>
+		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
+		<p>
+			<?php if( isset( $installed_plugins[$plugin] ) )
+			{
+			?>
+				 <a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the SlideDeck Lite plugin</a>
+			 <?php
+			}
+			else
+			{
+			 ?>
+			 <a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the SlideDeck Lite plugin</a>
+			 <?php } ?>
+
+		</p>
+		</div>
+		<?php
+	}
+	}
+
+	if( !class_exists('WPForms') )
+	{
+	$plugin = 'wpforms-lite/wpforms.php';
+	$slug = 'wpforms-lite';
+	$installed_plugins = get_plugins();
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+		?>
+		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
+		<p>
+			<?php if( isset( $installed_plugins[$plugin] ) )
+			{
+			?>
+				 <a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the WPForms Lite plugin</a>
+			 <?php
+			}
+			else
+			{
+			 ?>
+	 		 <a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the WP Forms Lite plugin</a>
+			 <?php } ?>
+		</p>
+		</div>
+		<?php
+	}
+	}
+
+}

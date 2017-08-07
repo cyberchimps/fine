@@ -1,6 +1,9 @@
 Fine Changelog
 
 ****************************
+Version 1.5 (08-08-17)
+- Added contact form element for homepage
+
 Version 1.4 (11-07-17)
 - Added visible edit links in the customizer preview
 
