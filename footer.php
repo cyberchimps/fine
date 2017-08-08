@@ -19,6 +19,33 @@
 </div><!-- wrapper -->
 </div><!-- container -->
 
+<?php
+$contact_background_image= cyberchimps_get_option( 'custom_back_image_uploader' );
+$contact_form_shortcode=cyberchimps_get_option( 'contact_form_shortcode' );
+$contact_form_heading=cyberchimps_get_option( 'contact_form_heading' );
+$contact_form_switch=cyberchimps_get_option( 'contact_form_switch' );
+
+if( $contact_form_switch == 1 )
+{
+?>
+<section class="full-width-container contact-full-width" style="background:url(<?php echo $contact_background_image; ?>);">
+	<div class="container">
+		
+		<div id="contact_form_container" style="text-align:center;">
+<h2 style="color:#fff"><?php echo $contact_form_heading; ?></h2>
+						<div class="contact_form-content">
+                                                   
+                                                      <div class="col-lg-12 contact_box">
+								<?php echo do_shortcode($contact_form_shortcode); ?>
+					            </div>
+
+						</div><!-- end of contact_form-content row-->
+					</div><!-- end of id="contact_form"-->
+				</div><!-- end of id="contact_form_container"-->
+		</div>
+	</div>
+</section>
+<?php } ?>
 <section class="full-width-container footer-full-width">
 	<div class="container">
 		<div class="container-fluid">
