@@ -525,6 +525,18 @@ function fine_customize_edit_links( $wp_customize ) {
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[header_image]', array(
 		'selector' => '#header_nav_container'
 	) );
+	
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[contact_form_heading]', array(
+		'selector' => '#contact_form_container h2'
+	) );
+	
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[contact_form_shortcode]', array(
+		'selector' => '.contact_box'
+	) );
+	
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[custom_back_image_uploader]', array(
+		'selector' => '.contact-full-width .container'
+	) );	
 
 }
 add_action( 'customize_register', 'fine_customize_edit_links' );
