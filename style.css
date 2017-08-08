@@ -1250,3 +1250,8 @@ img.box-image:hover {
 	margin-left:5%;
 }
 
+
+.contact_box input[type="text"], .contact_box textarea
+{
+	width:50%;
+}
