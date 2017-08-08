@@ -586,6 +586,7 @@ function cyberchimps_contact_form_fields( $fields_list ) {
 	$fields_list[] = array(
 			'name'    => __( 'Contact Form On/Off', 'cyberchimps_core' ),
 			'id'      => 'contact_form_switch',
+			'desc'   => 'Contact Form element will be displayed on the homepage.',
 			'std'     => 0,
 			'type'    => 'toggle',
 			'section' => 'cyberchimps_contact_section',
@@ -636,6 +637,7 @@ function fine_contact_form_register( $wp_customize ) {
 
 	    $wp_customize->add_control( 'contact_form_switch', array(
 	        'label' => __( 'Contact Form On/Off', 'cyberchimps_core' ),
+	        'description' => 'Contact Form element will be displayed on the homepage.',
 	        'section' => 'static_front_page',
 	        'settings' => 'cyberchimps_options[contact_form_switch]',
 	        'type' => 'checkbox'

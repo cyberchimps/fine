@@ -1256,3 +1256,23 @@ img.box-image:hover {
 {
 	width:50%;
 }
+
+@media (max-width: 800px) {
+
+	.contact_box input[type="text"], .contact_box input[type="email"], .contact_box textarea
+	{
+		width:80%;
+	}
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+	margin-top: 20px;
+	padding: 10px 15px;
+	border: 1px solid #c75500;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	background-color: #c75500;
+	color: #ffffff;
+}
+
