@@ -1251,7 +1251,8 @@ img.box-image:hover {
 }
 
 
-.contact_box input[type="text"], .contact_box textarea
+/* Contact form input width */
+.contact_box input[type="text"], .contact_box input[type="email"], .contact_box textarea
 {
 	width:50%;
 }
