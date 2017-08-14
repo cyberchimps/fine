@@ -4,7 +4,7 @@
  * Author: CyberChimps
  * Author URI: http://www.cyberchimps.com/
  * Description: Fine Free is a Responsive WordPress theme offering a fun easy to use Drag & Drop system that adds amazing new functionality to your WordPress website. Featuring responsive touch friendly theme options that work on any device, fully SEO optimized, dynamic sidebar layouts, and per-page dynamic templates. Powered by WordPress, Twitter Bootstrap, HTML5, and CSS3. The theme now comes up with contact form element for the homepage. For Support - <a href="https://cyberchimps.com/forum/free/fine/"> Support forum</a> (https://cyberchimps.com/forum/free/fine/).
- * Version: 1.5
+ * Version: 1.6
  * Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post, full-width-template, blog, portfolio, threaded-comments
  * Text Domain: fine
  * License: GNU General Public License version 3
@@ -1274,5 +1274,13 @@ input[type="submit"], input[type="reset"], input[type="button"] {
 	border-radius: 1px;
 	background-color: #c75500;
 	color: #ffffff;
+}
+
+
+
+/*================== Byline Author =====================*/
+.entry-meta .avatar
+{
+	float:none;
 }
 

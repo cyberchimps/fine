@@ -740,3 +740,43 @@ function fine_admin_notices()
 	}
 
 }
+
+add_action( 'cyberchimps_posted_by', 'fine_byline_author' );
+function fine_byline_author()
+{
+	// Get url of all author archive( the page will contain all posts by the author).
+$auther_posts_url = esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );
+
+// Set author title text which will appear on hover over the author link.
+$auther_link_title = esc_attr( sprintf( __( 'View all posts by %s', 'cyberchimps_core' ), get_the_author() ) );
+
+// Get value of post byline author toggle option from theme option for different pages.
+if( is_single() ) {
+	$show_author = ( cyberchimps_get_option( 'single_post_byline_author', 1 ) ) ? cyberchimps_get_option( 'single_post_byline_author', 1 ) : false;
+}
+elseif( is_archive() ) {
+	$show_author = ( cyberchimps_get_option( 'archive_post_byline_author', 1 ) ) ? cyberchimps_get_option( 'archive_post_byline_author', 1 ) : false;
+}
+else {
+	$show_author = ( cyberchimps_get_option( 'post_byline_author', 1 ) ) ? cyberchimps_get_option( 'post_byline_author', 1 ) : false;
+}
+
+	$posted_by = sprintf(
+							'<span class="byline"> ' . __( 'by %s', 'cyberchimps_core' ),
+								'<span class="author vcard">
+									<a class="url fn n" href="' . $auther_posts_url . '" title="' . $auther_link_title . '" rel="author">' . esc_html( get_the_author() ) . '</a>
+								</span>
+								<span class="avatar">
+									<a href="' . $auther_posts_url . '" title="' . $auther_link_title . '" rel="avatar">' . get_avatar( get_the_author_meta( 'ID' ), 20) . '</a>
+								</span>
+							</span>'
+
+						);
+
+	if( $show_author )
+	{
+			return $posted_by;
+	}
+
+	return;
+}
