@@ -741,8 +741,8 @@ function fine_admin_notices()
 
 }
 
-add_action( 'cyberchimps_posted_by', 'ifeature_byline_author' );
-function ifeature_byline_author()
+add_action( 'cyberchimps_posted_by', 'fine_byline_author' );
+function fine_byline_author()
 {
 	// Get url of all author archive( the page will contain all posts by the author).
 $auther_posts_url = esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );
