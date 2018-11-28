@@ -357,7 +357,7 @@ function cyberchimps_add_theme_options( $original ) {
 	$new_field[][1] = array(
 		'name'    => __( 'Header Image', 'fine' ),
 		'id'      => 'header_image',
-		'std'     => '',
+		'std'     => get_template_directory_uri() . '/images/header.jpg',
 		'type'    => 'upload',
 		'desc'    => __( 'The image used for the header needs to be a large image. We recommend a minimum width of 1000px and a maximum height of 550px', 'fine' ),
 		'section' => 'cyberchimps_header_options_section',
@@ -400,6 +400,7 @@ add_action( 'customize_register', 'fine_customize_register', 50 );
         // Add header image
         $wp_customize->add_setting( 'cyberchimps_options[header_image]', array(
             'description' => __( 'The image used for the header needs to be a large image. We recommend a minimum width of 1000px and a maximum height of 550px', 'fine' ),
+			'default' => get_template_directory_uri() . '/images/header.jpg',
             'type' => 'option',
             'sanitize_callback' => 'cyberchimps_sanitize_upload'
         ) );
