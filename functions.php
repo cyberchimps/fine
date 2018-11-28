@@ -861,7 +861,7 @@ add_action( 'wp_enqueue_scripts', 'fine_enqueue' );
  */
 function fine_block_styles() {
 
-	wp_enqueue_style( 'fine-google-font', 'https://fonts.googleapis.com/css?family=family=Noto+Sans:400,700|Imprima', array(), '1.0' );
+	wp_enqueue_style( 'fine-google-font', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Imprima', array(), '1.0' );
 
 	$typography_options   = cyberchimps_get_option( 'typography_options' );
 	$font_family_headings = cyberchimps_get_option( 'font_family_headings' );
