@@ -18,13 +18,76 @@
 // Load text domain.
 function cyberchimps_text_domain() {
 	load_theme_textdomain( 'fine', get_template_directory() . '/inc/languages' );
+
+	// enabling theme support for title tag.
 	add_theme_support( 'title-tag' );
+
+	// Add support for full and wide align images.
+	add_theme_support( 'align-wide' );
+
+	// Adds support for editor color palette.
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => __( 'Gray', 'fine' ),
+				'slug'  => 'gray',
+				'color' => '#777',
+			),
+			array(
+				'name'  => __( 'Light Gray', 'fine' ),
+				'slug'  => 'light-gray',
+				'color' => '#f5f5f5',
+			),
+			array(
+				'name'  => __( 'Black', 'fine' ),
+				'slug'  => 'black',
+				'color' => '#000000',
+			),
+
+			array(
+				'name'  => __( 'Blue', 'fine' ),
+				'slug'  => 'blue',
+				'color' => '#0286cf',
+			),
+
+			array(
+				'name'  => __( 'Legacy', 'fine' ),
+				'slug'  => 'legacy',
+				'color' => '#b6b6b6',
+			),
+
+			array(
+				'name'  => __( 'Red', 'fine' ),
+				'slug'  => 'red',
+				'color' => '#c80a00',
+			),
+			array(
+				'name'  => __( 'Text', 'fine' ),
+				'slug'  => 'text',
+				'color' => '#333333',
+			),
+
+			array(
+				'name'  => __( 'Link', 'fine' ),
+				'slug'  => 'link',
+				'color' => '#cc5600',
+			),
+
+			array(
+				'name'  => __( 'Hover', 'fine' ),
+				'slug'  => 'hover',
+				'color' => '#ba3e2e',
+			),
+		)
+	);
 }
 add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 require( get_template_directory() . '/inc/admin-about.php' );
+require_once( get_template_directory() . '/inc/testimonial_template.php' );
 
 // Set the content width based on the theme's design and stylesheet.
 if( !isset( $content_width ) ) {
@@ -294,10 +357,9 @@ function cyberchimps_add_theme_options( $original ) {
 	$new_field[][1] = array(
 		'name'    => __( 'Header Image', 'fine' ),
 		'id'      => 'header_image',
-		'std'     => '',
+		'std'     => get_template_directory_uri() . '/images/header.jpg',
 		'type'    => 'upload',
 		'desc'    => __( 'The image used for the header needs to be a large image. We recommend a minimum width of 1000px and a maximum height of 550px', 'fine' ),
-		'std'     => get_template_directory_uri() . '/images/header.jpg',
 		'section' => 'cyberchimps_header_options_section',
 		'heading' => 'cyberchimps_header_heading'
 	);
@@ -338,7 +400,7 @@ add_action( 'customize_register', 'fine_customize_register', 50 );
         // Add header image
         $wp_customize->add_setting( 'cyberchimps_options[header_image]', array(
             'description' => __( 'The image used for the header needs to be a large image. We recommend a minimum width of 1000px and a maximum height of 550px', 'fine' ),
-            'default' => get_template_directory_uri() . '/images/header.jpg',
+			'default' => get_template_directory_uri() . '/images/header.jpg',
             'type' => 'option',
             'sanitize_callback' => 'cyberchimps_sanitize_upload'
         ) );
@@ -525,18 +587,18 @@ function fine_customize_edit_links( $wp_customize ) {
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[header_image]', array(
 		'selector' => '#header_nav_container'
 	) );
-	
+
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[contact_form_heading]', array(
 		'selector' => '#contact_form_container h2'
 	) );
-	
+
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[contact_form_shortcode]', array(
 		'selector' => '.contact_box'
 	) );
-	
+
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[custom_back_image_uploader]', array(
 		'selector' => '.contact-full-width .container'
-	) );	
+	) );
 
 }
 add_action( 'customize_register', 'fine_customize_edit_links' );
@@ -780,3 +842,98 @@ else {
 
 	return;
 }
+
+
+
+/**
+ * [fine_enqueue description]
+ *
+ * @return void
+ */
+function fine_enqueue() {
+	$directory_uri = get_template_directory_uri();
+	wp_enqueue_script( 'jquery-flexslider', $directory_uri . '/inc/js/jquery.flexslider.js', 'jquery', '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'fine_enqueue' );
+
+
+/**
+ *  Enqueue block styles  in editor
+ */
+function fine_block_styles() {
+
+	wp_enqueue_style( 'fine-google-font', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Imprima', array(), '1.0' );
+
+	$typography_options   = cyberchimps_get_option( 'typography_options' );
+	$font_family_headings = cyberchimps_get_option( 'font_family_headings' );
+
+	$font_family               = $typography_options['face'] ? $typography_options['face'] : 'Arial, Helvetica, sans-serif';
+	$font_size                 = $typography_options['size'] ? $typography_options['size'] : '14px';
+	$font_weight               = $typography_options['style'] ? $typography_options['style'] : 'Normal';
+	$color                     = cyberchimps_get_option( 'text_colorpicker' ) ? cyberchimps_get_option( 'text_colorpicker' ) : '#333333';
+	$link_colorpicker          = cyberchimps_get_option( 'link_colorpicker' ) ? cyberchimps_get_option( 'link_colorpicker' ) : '#cc5600';
+	$link_hover_colorpicker    = cyberchimps_get_option( 'link_hover_colorpicker' ) ? cyberchimps_get_option( 'link_hover_colorpicker' ) : '#ba3e2e';
+	$fine_headings_font_family = $font_family_headings['face'] ? $font_family_headings['face'] : 'Arial, Helvetica, sans-serif';
+
+	?>
+	<style>
+	.wp-block-freeform,
+	.editor-writing-flow,
+	.editor-post-title__block,
+	.editor-styles-wrapper{
+		font-family: <?php echo $font_family; ?>;
+		font-size: <?php echo esc_html( $font_size, 'fine' ); ?> !important;
+		font-weight: <?php echo esc_html( $font_weight, 'fine' ); ?>;
+		color: <?php echo esc_html( $color, 'fine' ); ?>;
+		line-height: 1.5;
+	}
+	.wp-block-freeform.block-library-rich-text__tinymce h1,
+	.wp-block-freeform.block-library-rich-text__tinymce h2,
+	.wp-block-freeform.block-library-rich-text__tinymce h3,
+	.wp-block-freeform.block-library-rich-text__tinymce h4,
+	.wp-block-freeform.block-library-rich-text__tinymce h5,
+	.wp-block-freeform.block-library-rich-text__tinymce h6,
+	.wp-block-heading h1.editor-rich-text__tinymce,
+	.wp-block-heading h2.editor-rich-text__tinymce,
+	.wp-block-heading h3.editor-rich-text__tinymce,
+	.wp-block-heading h4.editor-rich-text__tinymce,
+	.wp-block-heading h5.editor-rich-text__tinymce,
+	.wp-block-heading h6.editor-rich-text__tinymce {
+		font-family: <?php echo $fine_headings_font_family; ?>;
+		color: #333333;
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+	.editor-post-title__block .editor-post-title__input{
+		color: #333333;
+		font-family: <?php echo $fine_headings_font_family; ?> !important;
+	}
+
+	.wp-block-freeform.block-library-rich-text__tinymce a,
+	.editor-writing-flow a{
+		color: <?php echo esc_html( $link_colorpicker, 'fine' ); ?> !important;
+		text-decoration: none;
+	}
+
+	.wp-block-freeform.block-library-rich-text__tinymce a:hover,
+	.wp-block-freeform.block-library-rich-text__tinymce a:focus,
+	.editor-writing-flow a:hover,
+	.editor-writing-flow a:focus{
+		color:  <?php echo esc_html( $link_hover_colorpicker, 'fine' ); ?>;
+	}
+
+	</style>
+	<?php
+	wp_enqueue_style( 'fine-gutenberg-blocks', get_stylesheet_directory_uri() . '/inc/css/gutenberg-blocks.css', array(), '1.0' );
+
+}
+add_action( 'enqueue_block_editor_assets', 'fine_block_styles' );
+
+/**
+ * [fine_set_defaults description].
+ */
+function fine_set_defaults() {
+	remove_action( 'testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ) );
+	add_action( 'testimonial', 'fine_testimonial_render_display' );
+}
+add_action( 'init', 'fine_set_defaults' );

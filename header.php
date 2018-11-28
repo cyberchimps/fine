@@ -53,10 +53,9 @@
 
 <div class="full-width-container header-full-width">
 
-	<?php $header_image = cyberchimps_get_option( 'header_image', get_template_directory_uri() . '/images/header.jpg' );
-	$header_image = ( $header_image != '' ) ? $header_image : get_template_directory_uri() . '/images/header.jpg'; ?>
+	<?php $header_image = cyberchimps_get_option( 'header_image' ) ? cyberchimps_get_option( 'header_image' ) : get_template_directory_uri() . '/images/header.jpg'; ?>
 
-	<img class="header-image" src="<?php echo esc_url( $header_image ); ?>" alt="Image"/>
+	<img class="header-image" src="<?php echo esc_url( $header_image ); ?>" alt="Image" />
 
 	<div class="header-container">
 
